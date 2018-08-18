@@ -138,7 +138,7 @@ if [ "$(file_getprop /tmp/anykernel/anykernel.sh do.cleanupmodules)" == 1 ]; the
   ui_print " ";
   ui_print "Removing old modules...";
   mount -o rw,remount -t auto /system;
-  rm -f /system/lib/modules/*.ko;
+  rm -f /system/vendor/lib/modules/*.ko;
   mount -o ro,remount -t auto /system;
 fi;
 
